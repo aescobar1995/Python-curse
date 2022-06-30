@@ -1,2 +1,2 @@
-# Python-curse
+# Python
 Curse of python
