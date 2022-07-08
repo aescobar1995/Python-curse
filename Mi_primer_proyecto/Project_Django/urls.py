@@ -20,4 +20,5 @@ from mi_app.views import saludo, saludar_a, mostrar_hora, saludo_personalizado, 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('mi_app.urls')),
+    path('', include('manejador_contenido.urls')),
 ]
