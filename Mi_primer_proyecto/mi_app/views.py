@@ -16,6 +16,10 @@ def mostrar_hora(request):
 def saludar_a(request, nombre):
     return HttpResponse(f"Hola como estas {nombre}")
 
+def mostrar_index(request):
+    return render(request, "mi_app/index.html",{"mi_titulo":"Hola este es mi primer website!!!"})
+
+
 def saludo_personalizado(request):
     context = {}
 
