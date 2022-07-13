@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from mi_app.views import saludo, saludar_a, mostrar_hora, listar_cursos, mostrar_index, saludo_personalizado
+from mi_app.views import saludo, saludar_a, mostrar_hora, listar_cursos, mostrar_index, saludo_personalizado, cursoFormulario, formulario_busqueda
 
 urlpatterns = [
     path('saludar/', saludo),
@@ -9,4 +9,6 @@ urlpatterns = [
     path('saludo_personalizado/', saludo_personalizado),
     path('lista_cursos/', listar_cursos),
     path('mi_pagina/', mostrar_index),
+    path('cursoFormulario/',cursoFormulario),
+    path('buscar/', formulario_busqueda),
 ]
